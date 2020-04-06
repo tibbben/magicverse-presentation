@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="common/css/reveal.css">
+  <link rel="stylesheet" href="common/css/white.css">
+  <link rel="stylesheet" href="common/css/overrides.css">
+  <script src="common/js/print.js"></script>
+  <title>Tiling the MagicVerse</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- ***
+            * Title Slide Branded
+            * -->
+      <section data-transition="fade" data-background-image="common/assets/img/titlePage.png">
+        <div style="position: absolute; top: 0px; left: 0px;">
+          <div style="color: black; margin-top: 100px; text-align: left; margin-left: 340px; margin-bottom: 23px;"><strong>Tiling the MagicVerse</strong></div>
+          <div style="color: white; margin-left: 340px; margin-top: 200px; font-size: 60%;">
+            <div style="text-align: left; float: left;">Timothy B Norris, PhD - <a href="mailto:tnorris@miami.edu" style="color: #fff; text-decoration: underline;">tnorris@miami.edu</a><br>University of Miami - Spring 2020<br><a href=""  style="color: #fff; text-decoration: underline;">some bitly url</a><br><a href="https://github.com/tibbben/tiling-the-magicverse"  style="color: #fff; text-decoration: underline;">https://github.com/tibbben/tiling-the-magicverse</a></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ***
+            * Proposal
+            * -->
+      <section data-transition="fade">
+        <div class="template-container">
+          <div class="template-header"><span>the proposal</span></div>
+          <div class="template-content-containter">
+
+            <div class="template-title"><span>Tiling the MagicVerse<span></div>
+
+            <div class="template-content">
+              The prototype that will emerge from the work will be a dynamically scalable version of the 3D campus map created for the first UM Magic Leap application. A user will be able to pick up the map, stretch it, squish it, and place it anywhere in the AR environment. At small scales the user will be able to see a limited view of the model at high resolution. At large scales the user will be able to hold a low resolution version of the entire campus in the palm of their hand. Hand gestures will be used to control the scale of the map and to move it around in the AR environment. 
+            </div>
+
+          </div>
+
+          <div class="template-citation">
+            <ul style="list-style: none;">
+              <li></li>
+            </ul>
+          </div>
+          
+          <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <!-- ***
+            * Outline
+            * -->
+      <section data-transition="fade">
+        <div class="template-container">
+          <div class="template-header"><span>to talk about</span></div>
+          <div class="template-content-containter">
+
+            <div class="template-title"><span>Tiling the MagicVerse<span></div>
+
+            <div class="template-content">
+
+              <ul>
+                <li>Three Components</li>
+                <li>Two approaches</li>
+                <li>Existing knowledge</li>
+                <li style="margin-top: 23px;">Next Steps</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="template-citation">
+            <ul style="list-style: none;">
+              <li></li>
+            </ul>
+          </div>
+          
+          <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <!-- ***
+            * Components
+            * -->
+      <section data-transition="fade">
+        <div class="template-container">
+          <div class="template-header"><span>basic tasks</span></div>
+          <div class="template-content-containter">
+
+            <div class="template-title"><span>Components<span></div>
+
+            <div class="template-content">
+
+              <ul>
+                <li>Headset</li>
+                <li>3D Tiles</li>
+                <li>Tile Server</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="template-citation">
+            <ul style="list-style: none;">
+              <li></li>
+            </ul>
+          </div>
+          
+          <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <!-- ***
+            * Approaches
+            * -->
+      <section data-transition="fade">
+        <div class="template-container">
+          <div class="template-header"><span>headset</span></div>
+          <div class="template-content-containter">
+
+            <div class="template-title"><span>Approaches<span></div>
+
+            <div class="template-content">
+
+              <ul>
+                <li>Game World (unity) (terrains)</li>
+                <li>Content Creation (magic-script) (meshes)</li>
+                <li style="margin-top: 42px;" class="fragment">terrains vs. meshes</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="template-citation">
+            <ul style="list-style: none;">
+              <li></li>
+            </ul>
+          </div>
+          
+          <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section>
+
+        <!-- ***
+              * Tiling Terrains in Game World
+              * -->
+        <section data-transition="fade">
+          <div class="template-container">
+            <div class="template-header"><span>unity gameworld</span></div>
+            <div class="template-content-containter">
+
+              <div class="template-title"><span>Terrains in Gameworld (unity)<span></div>
+
+              <div class="template-content" style="max-width: 90% !important;">
+
+                <div style="display: inline-block; width: 100%">
+
+                  <div style="float: right;">
+                    <img src="common/assets/img/MLRemote.png">
+                  </div>
+
+                  <div style="float: left; max-width: 42%; font-size: 85%;">
+                    <ul style="margin-top: 3%;">
+                      <li>Tiles as <i>terrain group</i><br>
+                        <ul>
+                          <li>Digital Surface Model</li>
+                          <li>Texture Maps</li>
+                        </ul>
+                      <li style="margin-top: 23px;">Cartesian transforms for coordinate system (real world -> game world)</li>
+                      <li>Problem with head position in game world: fixed to headset position</li>
+                      <li style="margin-top: 23px;">Possible with mesh tiles? Existing work?</li>
+                      <li>Lessen the overhead for simple app?</li>
+                    </ul>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="template-citation">
+              <ul style="list-style: none;">
+                <li></li>
+              </ul>
+            </div>
+            
+            <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+         </div>
+        </section>
+
+        <section data-transition="fade" data-background-image="common/assets/img/unity_tiles.jpg"></section>
+
+      </section>
+
+      <section>
+
+        <!-- ***
+              * Tiling Meshes as Content Creation
+              * -->
+        <section data-transition="fade">
+          <div class="template-container">
+            <div class="template-header"><span>magic-script content creation</span></div>
+            <div class="template-content-containter">
+
+              <div class="template-title"><span>Meshes in magic-script<span></div>
+
+              <div class="template-content" style="max-width: 90% !important;">
+
+                <div style="display: inline-block; width: 100%">
+
+                  <ul style="margin-top: 3%;">
+                    <li>magic-script: ecma script on node</i><br>
+                      <ul>
+                        <li><a href="https://docs.magicscript.org">API docs -> https://docs.magicscript.org</a></li>
+                        <li><a href="https://github.com/magic-script">GitHub -> https://github.com/magic-script</a></li>
+                        <li><a href="https://github.com/magic-script/magic-script-samples">Examples -> https://github.com/magic-script/magic-script-samples</a></li>
+                      </ul>
+                    <li style="margin-top: 23px;">Oriented towards building objects <i>not</i> scenes</li>
+                    <li>Examples use glTF format for models - GL transmission format</li>
+                    <li style="margin-top: 23px;">Many existing libraries in node world</li>
+                    <li>Still plenty of node overhead</li>
+                  </ul>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="template-citation">
+              <ul style="list-style: none;">
+                <li></li>
+              </ul>
+            </div>
+            
+            <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+         </div>
+        </section>
+
+        <!-- ***
+              * Tiling Meshes as Content Creation
+              * -->
+        <section data-transition="fade">
+          <div class="template-container">
+            <div class="template-header"><span>gl Transmission Format</span></div>
+            <div class="template-content-containter">
+
+              <div class="template-title"><span>glTF<span></div>
+
+              <div class="template-content" style="max-width: 90% !important;">
+
+                <div style="display: inline-block; width: 100%">
+
+                  <ul style="margin-top: 3%;">
+                    <li>Khronos Group manages the specification</i><br>
+                      <ul>
+                        <li><a href="https://github.com/KhronosGroup/glTF">https://github.com/KhronosGroup/glTF</a></li>
+                        <li><a href="https://github.com/KhronosGroup">many 3D tools -> https://github.com/KhronosGroup</a></li>
+                      </ul>
+                    <li style="margin-top: 23px;">Apparently becoming the standard for web based 3D rendering</li>
+                    <li>Also exists as binary - glb</li>
+                  </ul>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="template-citation">
+              <ul style="list-style: none;">
+                <li></li>
+              </ul>
+            </div>
+            
+            <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+         </div>
+        </section>
+
+        <section data-transition="fade" data-background-image="https://raw.githubusercontent.com/KhronosGroup/glTF/master/specification/2.0/figures/gltfOverview-2.0.0b.png"><div class="template-title" style="background-color: white; opacity: 0.8; border-radius: 7px;"><a href="https://github.com/KhronosGroup/glTF">https://github.com/KhronosGroup/glTF</a></div></section>
+
+      </section>
+
+      <section>
+
+        <!-- ***
+              * Mesh Tile Creation
+              * -->
+        <section data-transition="fade">
+          <div class="template-container">
+            <div class="template-header"><span>mesh tiles</span></div>
+            <div class="template-content-containter">
+
+              <div class="template-title"><span>Cesium and 3D tiles<span></div>
+
+              <div class="template-content" style="max-width: 90% !important;">
+
+                <div style="display: inline-block; width: 100%">
+
+                  <ul style="margin-top: 3%;">
+                    <li>Analytical Graphics manages the specification</i><br>
+                      <ul>
+                        <li><a href="https://github.com/CesiumGS/3d-tiles">https://github.com/CesiumGS/3d-tiles</a></li>
+                        <li><a href="https://github.com/CesiumGS/3d-tiles/tree/master/specification">actual specification</a></li>
+                        <li><a href="https://github.com/KhronosGroup">many 3D tools -> https://github.com/CesiumGS</a></li>
+                      </ul>
+                    <li style="margin-top: 23px;">All built around glTF</li>
+                    <li>Free online tile creation service (tiles are hosted): <a href="https://cesium.com">https://cesium.com</a></li>
+                    <li>example - <a href="UMTiled.html">UMTiled.html</a></li>
+                    <li>Potential collaboration ... or competition?</li>
+                  </ul>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="template-citation">
+              <ul style="list-style: none;">
+                <li></li>
+              </ul>
+            </div>
+            
+            <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+         </div>
+        </section>
+
+    </div>
+  </div>
+  <script src="common/js/reveal.js"></script>
+	<script src="common/js/notes.js"></script>
+  <script src="common/js/head.min.js"></script>
+  <script>
+    Reveal.initialize({
+        width: 1366, height: 768, margin: 0.05,
+        controls: false,
+        progress: true,
+        history: true,
+        center: true,
+        mouseWheel: false,
+        chart: {
+          defaults: {
+            global: {
+              defaultFontSize: 20,
+              title: { fontColor: "#333" },
+              legend: {
+                position: "top",
+                labels: { fontColor: "#333" },
+              },
+              tooltips: {
+                labels: { fontColor: "#333" },
+              },
+            },
+            scale: {
+              scaleLabel: { fontColor: "#333" },
+              gridLines: { color: "#333", zeroLineColor: "#333" },
+              ticks: { fontColor: "#333" },
+            }
+          },
+        },
+        dependencies: [
+            { src: 'common/js/Chart.min.js' },
+            { src: 'common/js/csv2chart.js' }
+        ]
+    });
+  </script>
+</body>
+</html>
