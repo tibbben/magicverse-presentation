@@ -72,6 +72,38 @@
       </section>
 
       <!-- ***
+            * Challenges
+            * -->
+      <section data-transition="fade">
+        <div class="template-container">
+          <div class="template-header"><span>scope and challenges</span></div>
+          <div class="template-content-containter">
+
+            <div class="template-title"><span>Known Difficulties<span></div>
+
+            <div class="template-content">
+              <ul style="line-height: 180%;">
+                <li>Memory limitations on the device</li>
+                <li>Internet connection speeds</li>
+                <li>Tile creation at appropriate detail and scale</li>
+                <li>Gesture driven user interface</li>
+                <li>Future of AR in the consumer world</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="template-citation">
+            <ul style="list-style: none;">
+              <li></li>
+            </ul>
+          </div>
+          
+          <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <!-- ***
             * Outline
             * -->
       <section data-transition="fade">
@@ -83,10 +115,11 @@
 
             <div class="template-content">
 
-              <ul>
+              <ul style="line-height: 180%;">
                 <li>Three Components</li>
                 <li>Two approaches</li>
-                <li>Existing knowledge</li>
+                <li>Tile Creation</li>
+                <li>User Experience</li>
                 <li style="margin-top: 23px;">Next Steps</li>
               </ul>
 
@@ -117,9 +150,21 @@
             <div class="template-content">
 
               <ul>
-                <li>Headset</li>
-                <li>3D Tiles</li>
-                <li>Tile Server</li>
+                <li style="font-weight: 600;">Headset</li>
+                <ul>
+                  <li>load only necessary tiles based on current view</li>
+                  <li>intuitive user interface for pan, zoom, and move</li>
+                </ul>
+                <li style="margin-top: 23px;font-weight: 600;">3D Tiles</li>
+                <ul>
+                  <li>data structure for automated creation and view-based loading</li>
+                  <li>levels of detail based on real world error estimates</li>
+                </ul>
+                <li style="margin-top: 23px;font-weight: 600;">Tile Server</li>
+                <ul>
+                  <li>web based storage for tiles</li>
+                  <li>accessible to headset through https</li>
+                </ul>
               </ul>
 
             </div>
@@ -149,9 +194,19 @@
             <div class="template-content">
 
               <ul>
-                <li>Game World (unity) (terrains)</li>
-                <li>Content Creation (magic-script) (meshes)</li>
-                <li style="margin-top: 42px;" class="fragment">terrains vs. meshes</li>
+                <li style="font-weight: 600;">Game World (unity)</li>
+                <ul>
+                  <li>terrains for landscape</li>
+                  <li>digital surface models (DSM) and draped imagery</li>
+                  <li>plenty of experience with game world terrains</li>
+                </ul>
+                <li style="margin-top: 23px;font-weight: 600;">Content Creation (magic-script)</li>
+                <ul>
+                  <li>meshes for landscapes</li>
+                  <li>surface of triangles and mapped imagery</li>
+                  <li>some experience with google earth and map box</li>
+                </ul>
+                <li style="font-weight: 600;margin-top: 42px; margin-left: 120px; font-size: 120%" class="fragment">Terrains vs. Meshes</li>
               </ul>
 
             </div>
@@ -168,193 +223,267 @@
        </div>
       </section>
 
-      <section>
+      <!-- ***
+            * Tiling Terrains in Game World
+            * -->
+      <section data-transition="fade">
+        <div class="template-container">
+          <div class="template-header"><span>unity gameworld</span></div>
+          <div class="template-content-containter">
 
-        <!-- ***
-              * Tiling Terrains in Game World
-              * -->
-        <section data-transition="fade">
-          <div class="template-container">
-            <div class="template-header"><span>unity gameworld</span></div>
-            <div class="template-content-containter">
+            <div class="template-title"><span>Terrains in Gameworld (unity)<span></div>
 
-              <div class="template-title"><span>Terrains in Gameworld (unity)<span></div>
+            <div class="template-content" style="max-width: 90% !important;">
 
-              <div class="template-content" style="max-width: 90% !important;">
+              <div style="display: inline-block; width: 100%">
 
-                <div style="display: inline-block; width: 100%">
+                <div style="float: right;">
+                  <img src="common/assets/img/MLRemote.png">
+                </div>
 
-                  <div style="float: right;">
-                    <img src="common/assets/img/MLRemote.png">
-                  </div>
+                <div style="float: left; max-width: 42%; font-size: 85%;">
+                  <ul style="margin-top: 3%;">
+                    <li>Tiles as <i>terrain group</i><br>
+                      <ul>
+                        <li>Digital Surface Model</li>
+                        <li>Texture Maps</li>
+                      </ul>
+                    <li style="margin-top: 23px;">Cartesian transforms for coordinate system (real world -> game world)</li>
+                    <li>Problem with head position in game world: fixed to headset position</li>
+                    <li style="margin-top: 23px;">Possible with mesh tiles? Existing work?</li>
+                    <li>Lessen the overhead for simple app?</li>
+                  </ul>
+                </div>
 
-                  <div style="float: left; max-width: 42%; font-size: 85%;">
-                    <ul style="margin-top: 3%;">
-                      <li>Tiles as <i>terrain group</i><br>
-                        <ul>
-                          <li>Digital Surface Model</li>
-                          <li>Texture Maps</li>
-                        </ul>
-                      <li style="margin-top: 23px;">Cartesian transforms for coordinate system (real world -> game world)</li>
-                      <li>Problem with head position in game world: fixed to headset position</li>
-                      <li style="margin-top: 23px;">Possible with mesh tiles? Existing work?</li>
-                      <li>Lessen the overhead for simple app?</li>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="template-citation">
+            <ul style="list-style: none;">
+              <li></li>
+            </ul>
+          </div>
+          
+          <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section data-transition="fade" data-background-image="common/assets/img/unity_tiles.jpg"></section>
+
+      <!-- ***
+            * Tiling Meshes as Content Creation
+            * -->
+
+      <section data-transition="fade">
+        <div class="template-container">
+          <div class="template-header"><span>magic-script content creation</span></div>
+          <div class="template-content-containter">
+
+            <div class="template-title"><span>Meshes in magic-script<span></div>
+
+            <div class="template-content" style="max-width: 90% !important;">
+
+              <div style="display: inline-block; width: 100%">
+
+                <ul style="margin-top: 3%;">
+                  <li>magic-script: ecma script on node</i><br>
+                    <ul>
+                      <li><a href="https://docs.magicscript.org">API docs -> https://docs.magicscript.org</a></li>
+                      <li><a href="https://github.com/magic-script">GitHub -> https://github.com/magic-script</a></li>
+                      <li><a href="https://github.com/magic-script/magic-script-samples">Examples -> https://github.com/magic-script/magic-script-samples</a></li>
                     </ul>
-                  </div>
-
-                </div>
+                  <li style="margin-top: 23px;">Oriented towards building objects <i>not</i> scenes</li>
+                  <li>Examples use glTF format for models - GL transmission format</li>
+                  <li style="margin-top: 23px;">Many existing libraries in node world</li>
+                  <li>Still plenty of node overhead</li>
+                </ul>
 
               </div>
 
             </div>
 
-            <div class="template-citation">
-              <ul style="list-style: none;">
-                <li></li>
-              </ul>
-            </div>
-            
-            <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
-         </div>
-        </section>
+          </div>
 
-        <section data-transition="fade" data-background-image="common/assets/img/unity_tiles.jpg"></section>
-
+          <div class="template-citation">
+            <ul style="list-style: none;">
+              <li></li>
+            </ul>
+          </div>
+          
+          <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
       </section>
 
-      <section>
+      <!-- ***
+            * Tiling Meshes as Content Creation
+            * -->
+      <section data-transition="fade">
+        <div class="template-container">
+          <div class="template-header"><span>gl Transmission Format</span></div>
+          <div class="template-content-containter">
 
-        <!-- ***
-              * Tiling Meshes as Content Creation
-              * -->
-        <section data-transition="fade">
-          <div class="template-container">
-            <div class="template-header"><span>magic-script content creation</span></div>
-            <div class="template-content-containter">
+            <div class="template-title"><span>glTF<span></div>
 
-              <div class="template-title"><span>Meshes in magic-script<span></div>
+            <div class="template-content" style="max-width: 90% !important;">
 
-              <div class="template-content" style="max-width: 90% !important;">
+              <div style="display: inline-block; width: 100%">
 
-                <div style="display: inline-block; width: 100%">
-
-                  <ul style="margin-top: 3%;">
-                    <li>magic-script: ecma script on node</i><br>
-                      <ul>
-                        <li><a href="https://docs.magicscript.org">API docs -> https://docs.magicscript.org</a></li>
-                        <li><a href="https://github.com/magic-script">GitHub -> https://github.com/magic-script</a></li>
-                        <li><a href="https://github.com/magic-script/magic-script-samples">Examples -> https://github.com/magic-script/magic-script-samples</a></li>
-                      </ul>
-                    <li style="margin-top: 23px;">Oriented towards building objects <i>not</i> scenes</li>
-                    <li>Examples use glTF format for models - GL transmission format</li>
-                    <li style="margin-top: 23px;">Many existing libraries in node world</li>
-                    <li>Still plenty of node overhead</li>
-                  </ul>
-
-                </div>
+                <ul style="margin-top: 3%;">
+                  <li>Khronos Group manages the specification</i><br>
+                    <ul>
+                      <li><a href="https://github.com/KhronosGroup/glTF">https://github.com/KhronosGroup/glTF</a></li>
+                      <li><a href="https://github.com/KhronosGroup">many 3D tools -> https://github.com/KhronosGroup</a></li>
+                    </ul>
+                  <li style="margin-top: 23px;">Apparently becoming the standard for web based 3D rendering</li>
+                  <li>Also exists as binary - glb</li>
+                </ul>
 
               </div>
 
             </div>
 
-            <div class="template-citation">
-              <ul style="list-style: none;">
-                <li></li>
-              </ul>
-            </div>
-            
-            <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
-         </div>
-        </section>
+          </div>
 
-        <!-- ***
-              * Tiling Meshes as Content Creation
-              * -->
-        <section data-transition="fade">
-          <div class="template-container">
-            <div class="template-header"><span>gl Transmission Format</span></div>
-            <div class="template-content-containter">
-
-              <div class="template-title"><span>glTF<span></div>
-
-              <div class="template-content" style="max-width: 90% !important;">
-
-                <div style="display: inline-block; width: 100%">
-
-                  <ul style="margin-top: 3%;">
-                    <li>Khronos Group manages the specification</i><br>
-                      <ul>
-                        <li><a href="https://github.com/KhronosGroup/glTF">https://github.com/KhronosGroup/glTF</a></li>
-                        <li><a href="https://github.com/KhronosGroup">many 3D tools -> https://github.com/KhronosGroup</a></li>
-                      </ul>
-                    <li style="margin-top: 23px;">Apparently becoming the standard for web based 3D rendering</li>
-                    <li>Also exists as binary - glb</li>
-                  </ul>
-
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="template-citation">
-              <ul style="list-style: none;">
-                <li></li>
-              </ul>
-            </div>
-            
-            <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
-         </div>
-        </section>
-
-        <section data-transition="fade" data-background-image="https://raw.githubusercontent.com/KhronosGroup/glTF/master/specification/2.0/figures/gltfOverview-2.0.0b.png"><div class="template-title" style="background-color: white; opacity: 0.8; border-radius: 7px;"><a href="https://github.com/KhronosGroup/glTF">https://github.com/KhronosGroup/glTF</a></div></section>
-
+          <div class="template-citation">
+            <ul style="list-style: none;">
+              <li></li>
+            </ul>
+          </div>
+          
+          <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
       </section>
 
-      <section>
+      <section data-transition="fade" data-background-image="https://raw.githubusercontent.com/KhronosGroup/glTF/master/specification/2.0/figures/gltfOverview-2.0.0b.png"><div class="template-title" style="background-color: white; opacity: 0.8; border-radius: 7px;"><a href="https://github.com/KhronosGroup/glTF">https://github.com/KhronosGroup/glTF</a></div></section>
 
-        <!-- ***
-              * Mesh Tile Creation
-              * -->
-        <section data-transition="fade">
-          <div class="template-container">
-            <div class="template-header"><span>mesh tiles</span></div>
-            <div class="template-content-containter">
+      <!-- ***
+            * Mesh Tile Creation
+            * -->
 
-              <div class="template-title"><span>Cesium and 3D tiles<span></div>
+      <section data-transition="fade">
+        <div class="template-container">
+          <div class="template-header"><span>mesh tiles</span></div>
+          <div class="template-content-containter">
 
-              <div class="template-content" style="max-width: 90% !important;">
+            <div class="template-title"><span>Cesium and 3D tiles<span></div>
 
-                <div style="display: inline-block; width: 100%">
+            <div class="template-content" style="max-width: 90% !important;">
 
-                  <ul style="margin-top: 3%;">
-                    <li>Analytical Graphics manages the specification</i><br>
-                      <ul>
-                        <li><a href="https://github.com/CesiumGS/3d-tiles">https://github.com/CesiumGS/3d-tiles</a></li>
-                        <li><a href="https://github.com/CesiumGS/3d-tiles/tree/master/specification">actual specification</a></li>
-                        <li><a href="https://github.com/KhronosGroup">many 3D tools -> https://github.com/CesiumGS</a></li>
-                      </ul>
-                    <li style="margin-top: 23px;">All built around glTF</li>
-                    <li>Free online tile creation service (tiles are hosted): <a href="https://cesium.com">https://cesium.com</a></li>
-                    <li>example - <a href="UMTiled.html">UMTiled.html</a></li>
-                    <li>Potential collaboration ... or competition?</li>
-                  </ul>
+              <div style="display: inline-block; width: 100%">
 
-                </div>
+                <ul style="margin-top: 3%;">
+                  <li>Analytical Graphics manages the specification</i><br>
+                    <ul>
+                      <li><a href="https://github.com/CesiumGS/3d-tiles">https://github.com/CesiumGS/3d-tiles</a></li>
+                      <li><a href="https://github.com/CesiumGS/3d-tiles/tree/master/specification">actual specification</a></li>
+                      <li><a href="https://github.com/KhronosGroup">many 3D tools -> https://github.com/CesiumGS</a></li>
+                    </ul>
+                  <li style="margin-top: 23px;">All built around glTF</li>
+                  <li>Free online tile creation service (tiles are hosted): <a href="https://cesium.com">https://cesium.com</a></li>
+                  <li>example - <a href="UMTiled.html" target="_blank">UMTiled.html</a></li>
+                  <li>Potential collaboration ... or competition?</li>
+                </ul>
 
               </div>
 
             </div>
 
-            <div class="template-citation">
-              <ul style="list-style: none;">
-                <li></li>
-              </ul>
+          </div>
+
+          <div class="template-citation">
+            <ul style="list-style: none;">
+              <li></li>
+            </ul>
+          </div>
+          
+          <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section data-transition="fade">
+        <div class="template-container">
+          <div class="template-header"><span>point cloud chunks</span></div>
+          <div class="template-content-containter">
+
+            <div class="template-title"><span>Point Cloud from Drone Flight<span></div>
+
+            <div class="template-content" style="max-width: 90% !important;">
+
+              <img src="common/assets/img/cleaned_7chunks_pointCloud.png">
+
             </div>
-            
-            <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
-         </div>
-        </section>
+
+          </div>
+
+          <div class="template-citation">
+            <ul style="list-style: none;">
+              <li></li>
+            </ul>
+          </div>
+          
+          <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section data-transition="fade">
+        <div class="template-container">
+          <div class="template-header"><span>mesh tiles</span></div>
+          <div class="template-content-containter">
+
+            <div class="template-title"><span>3D Mesh Tiles<span></div>
+
+            <div class="template-content" style="max-width: 90% !important;">
+
+              <img src="common/assets/img/d9_tiles.png">
+
+            </div>
+
+          </div>
+
+          <div class="template-citation">
+            <ul style="list-style: none;">
+              <li></li>
+            </ul>
+          </div>
+          
+          <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
+
+      <section data-transition="fade">
+        <div class="template-container">
+          <div class="template-header"><span>beat us to the punch</span></div>
+          <div class="template-content-containter">
+
+            <div class="template-title"><span>HoloMaps<span></div>
+
+            <div class="template-content" style="max-width: 90% !important;">
+
+              <div style="display: inline-block; width: 100%">
+
+                <table style="max-width: 80%;">
+                  <tr><td colspan=2><center><img src="common/assets/img/holomaps3.png" style="max-height: 200px;"></center></td></tr>
+                  <tr><td><img src="common/assets/img/holomaps1.png"></td><td><img src="common/assets/img/holomaps2.png"></td></tr>
+                </table>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="template-citation">
+            <ul style="list-style: none;">
+              <li></li>
+            </ul>
+          </div>
+          
+          <div class="template-footer"><table width=100%><tr><td background="common/assets/img/UM.jpg" height=80 width=98></td><td background="common/assets/img/bar.jpg"></td><td width=60></td></tr></table></div>
+       </div>
+      </section>
 
     </div>
   </div>
